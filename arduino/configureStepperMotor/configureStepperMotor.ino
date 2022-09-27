@@ -8,7 +8,7 @@
 #define STP_PIN_RIGHT 10
 #define DIS_PIN_RIGHT 11
 
-bool IS_CONFIGURE_LEFT_MOTOR = true; 
+bool IS_CONFIGURE_LEFT_MOTOR = false; 
 
 const int StepsPerRevolution = 200;  // change this to fit the total number of steps per revolution for your motor
 
@@ -27,7 +27,7 @@ const int StepsPerRevolution = 200;  // change this to fit the total number of s
 
 IFX9201_STEPPERMOTOR_config_t stepper_motor_config =
 {
-	.SteppingpMode = IFX9201_STEPPERMOTOR_STEPPINGMODE_FULL,
+	.SteppingpMode = IFX9201_STEPPERMOTOR_STEPPINGMODE_HALF,
 	.FreqPWMOut = 20000u,
 	.PWMDutyCycleNormFactor = 2000u,
 	.NumMicrosteps = 64,

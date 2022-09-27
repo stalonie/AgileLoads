@@ -22,31 +22,11 @@ void setup() {
 }
 
 void loop() {
-	Serial.println("moves 4 revolutions in clockwise direction");
-	MyStepperMotor.move_revolution(4);
-	delay(1000);
 
-	Serial.println("moves 3 revolutions in counterclockwise direction");
-	MyStepperMotor.move_revolution(-3);
-	delay(1000);
-
-	Serial.println("moves 180 degree in clockwise direction");
-	MyStepperMotor.move_degree(180);
-	delay(1000);
 
 	Serial.println("moves 90 degree in counterclockwise direction");
-	MyStepperMotor.move_degree(-90);
+	MyStepperMotor.move_degree(360);
 	delay(1000);
 
-	Serial.println("moves 400 steps in clockwise direction");
-	MyStepperMotor.step(400);
-	delay(1000);
 
-	Serial.println("moves 200 steps in counterclockwise direction");
-	MyStepperMotor.step(-200);
-	delay(1000);
-
-	Serial.println("reset the stepper motor to the initial position");
-	MyStepperMotor.reset_motor();
-  delay(2000);
 }
